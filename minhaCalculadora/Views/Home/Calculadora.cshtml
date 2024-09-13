@@ -1,0 +1,34 @@
+﻿<div class="text-center">
+    @{
+        ViewData["Title"] = "Calculadora";
+    }
+
+    <div>
+        <h1>Calculadora</h1>
+        
+        <form asp-controller="Calculadora" asp-action="Somar" method="post">
+
+        <div class="col-4 m-auto mt-4">
+
+        <div class="mb-3">
+            <label class="form-label">Número 1</label>
+            <input type="text" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Número 2</label>
+            <input type="text" class="form-control"/>
+        </div>
+        <div class="mb-3">
+        <label>Resultado = </label>
+            </div>
+        <button type="submit" class="btn btn-light">Soma</button>
+
+        <button type="reset" class="btn btn-danger">Limpar</button>
+
+        </div>
+
+        </form>
+    </div>
+
+</div>
